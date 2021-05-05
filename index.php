@@ -1,4 +1,4 @@
-<?php include_once("/home/14zxg/public_html/a5/inc/functions.php"); ?>
+<?php include_once("./inc/functions.php"); ?>
 
 <!DOCTYPE html>
 

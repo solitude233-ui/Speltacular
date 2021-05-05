@@ -1,0 +1,153 @@
+/*****************************************************************************/
+/* Some tablets and larger (768px) */
+/*****************************************************************************/
+@media only screen and (min-width: 768px) {
+    /********************************/
+    /* Colours, Borders and Shadows */
+    /********************************/
+    body {
+    	background-image: url("/~14zxg/a4/img/bread.jpg");
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    }
+    
+    .column {
+    	background-color: #fffefb;
+    	background-image: none;
+    }
+    
+    main, footer {
+    	background-color: transparent;	
+    	background-image: none;
+    }
+    
+	header, header nav a, header nav a:visited {
+		color: #763523;
+	}          
+
+    header nav a:hover {
+    	color: #fffefb;
+    	background-color: #763523;
+    }
+    
+    footer {
+    	color: #000;	
+    }
+                	
+	header.column,
+	blockquote,
+	header img {
+		box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	}
+
+    .column {
+    	box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.5);
+       	border-bottom-left-radius: 6px;
+    	border-bottom-right-radius: 0;
+    }
+
+	header.column {
+       	border-bottom-left-radius: 0;
+    	border-bottom-right-radius: 6px;		
+	}
+
+	
+	/***************/
+	/* Transitions */
+	/***************/
+	header nav a {
+		transition: color 1s;	
+		transition: background-color 1s;	
+	}
+	
+
+    /***********/
+    /* Columns */
+    /***********/
+    .column-container {
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .column {
+    	flex: 2 1 400px;	       
+    }
+    	
+    header.column {
+        flex: 1 1 200px;
+        max-width: 300px;
+    	margin-right: 32px;        
+    }
+    
+    /* Float Option */
+    /*
+    .column {
+    	float: left;
+    	width: 67%;
+    }
+    	
+    header.column {    	
+    	margin-right: 32px;    	
+    	width: calc(33% - 32px);
+    }
+    */
+    
+    
+    /**********/
+    /* Header */
+    /**********/
+    #site-title {
+    	padding-left: 16px;
+    	padding-right: 16px;
+    }
+    
+    
+    /***********/
+    /* Content */
+    /***********/
+    body {
+    	min-height: 100vh;
+    }       
+}
+
+
+
+
+/*****************************************************************************/
+/* Some desktops and larger (992px) */
+/*****************************************************************************/
+@media only screen and (min-width: 992px) {
+    /***********/
+    /* Columns */
+    /***********/
+    /* Float Option */
+    /*
+    .column {
+    	width: 75%;
+    }
+    	
+    header.column {    	
+    	width: calc(25% - 32px);
+    }
+    */
+}
+
+
+/*****************************************************************************/
+/* Desktops and larger (1200px) */
+/*****************************************************************************/
+@media only screen and (min-width: 1200px) {
+    /***********/
+    /* Columns */
+    /***********/
+    /* Float Option */
+    /*
+    .column {
+    	width: 80%;
+    }
+    
+    header.column {    	
+    	width: calc(20% - 32px);
+    }
+    */
+}
